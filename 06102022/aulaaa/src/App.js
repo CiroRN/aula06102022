@@ -4,7 +4,7 @@ import Pedido from './components/Pedido';
 
 function App() {
   return (
-      <LoginForm></LoginForm>
+      <Pedido></Pedido>
   );
 }
 

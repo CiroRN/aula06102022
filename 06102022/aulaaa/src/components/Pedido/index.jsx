@@ -1,25 +1,34 @@
-import React,{useState} from "react";
-import * as S from './styled';
+import React from 'react';
+import './pedido.css'
 
 const Pedido = () => {
-    const [pedido,setPedido] = useState('');
-
-    const headlersubmit=(e)=>{
-        e.preventDefault();
-    }
-
     return(
-        <S.container>
-            <S.h1>Cardapio</S.h1>
-            <S.h11>
-                1.comida
-                2.cumida
-            </S.h11>
-            <S.Form onSubmit={headlersubmit}>
-                <S.Input placeholder="Numero do pedido" value={pedido} onChange={(e)=>{setPedido(e.target.value)}}></S.Input>
-                <S.Botao>Envia</S.Botao>
-            </S.Form>
-        </S.container>
+    <div>
+        <div>
+            <div className="barrapesquisa">
+                <input type="text" placeholder='Procurar...' className='search'/>
+                <div className="add">
+                    <button className="adicionar">Adicionar</button>
+                </div>
+            </div>
+        </div>
+        <div className='tabata'>
+            <thead>
+                <tr className='tr1'>
+                    <th>Numero:</th>
+                    <th>Prato:</th>
+                    <th>Preço:</th>
+                </tr>
+            </thead>
+            <tbody className='tbody'>
+                <tr className='tr2'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
     );
 };
 
