@@ -1,34 +1,22 @@
-import React from 'react';
-import './pedido.css'
+import React,{useState} from "react";
+import './Filtro.css'
 
 const Pedido = () => {
+
     return(
-    <div>
         <div>
-            <div className="barrapesquisa">
-                <input type="text" placeholder='Procurar...' className='search'/>
-                <div className="add">
-                    <button className="adicionar">Adicionar</button>
-                </div>
+            <div className="tab">
+                <h1>Escreva o numero do pedido:</h1>
+                <input className="search"></input>
+                <button className="pedir">Pedir</button>
+            </div>
+            <div className="tab">
+                <h1 className="car">Cardapio:</h1>
+                <h1 className="des">Numero - Prato   - Preço</h1>
+                <h1 className="itn">1      - Lasanha - R$12</h1>
+                <h1 className="itn">2      - Espaget - R$8</h1>
             </div>
         </div>
-        <div className='tabata'>
-            <thead>
-                <tr className='tr1'>
-                    <th>Numero:</th>
-                    <th>Prato:</th>
-                    <th>Preço:</th>
-                </tr>
-            </thead>
-            <tbody className='tbody'>
-                <tr className='tr2'>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </div>
-    </div>
     );
 };
 

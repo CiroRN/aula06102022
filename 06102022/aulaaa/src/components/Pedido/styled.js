@@ -21,12 +21,3 @@ export const Botao = styled.button`
     margin: 0 auto;
     margin-top: 20px;
 `
-export const h1 = styled.h1`
-    font-weight: bold;
-    font-size: 16;
-`
-
-export const h11 = styled.h1`
-    font-weight: normal;
-    font-size: 12;
-`
