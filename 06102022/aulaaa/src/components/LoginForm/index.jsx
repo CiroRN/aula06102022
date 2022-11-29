@@ -37,6 +37,7 @@ const LoginForm = () => {
                 <S.Input placeholder="Nome" value={nome} onChange={(e)=>{setNome(e.target.value)}}></S.Input>
                 <S.Input placeholder="Senha" value={senha} onChange={(e)=>{setSenha(e.target.value)}}></S.Input>
                 <S.Botao>Envia</S.Botao>
+                <a href="/pedido">-  nunpod</a>
             </S.Form>
         </S.container>
     );
