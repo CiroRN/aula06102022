@@ -1,10 +1,11 @@
 import './App.css';
 import LoginForm from './components/LoginForm';
 import Pedido from './components/Pedido';
+import Routa from './routes';
 
 function App() {
   return (
-      <Pedido></Pedido>
+      <Routa></Routa>
   );
 }
 
