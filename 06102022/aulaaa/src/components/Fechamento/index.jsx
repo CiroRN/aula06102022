@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import * as S from './styled';
 
-const Fechamento = () => {
+const Pedido = () => {
     const [pedido,setPedido] = useState('');
 
     const headlersubmit=(e)=>{
@@ -18,4 +18,4 @@ const Fechamento = () => {
     );
 };
 
-export default Fechamento;
+export default Pedido;
